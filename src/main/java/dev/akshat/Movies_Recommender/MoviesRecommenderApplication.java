@@ -15,6 +15,6 @@ public class MoviesRecommenderApplication {
 
 	@GetMapping("/")
 	public String apiRoot(){
-		return "Hello , World";
+		return "Test_Run";
 	}
 }
