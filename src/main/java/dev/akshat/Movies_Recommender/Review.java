@@ -9,12 +9,16 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "reviews")
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
 public class Review {
     @Id
     private ObjectId id;
     private String body;
+
+    public Review(ObjectId id, String body) {
+        this.id = id;
+        this.body = body;
+    }
 
     public Review(String body) {
         this.body = body;
